@@ -1,3 +1,10 @@
+export interface ArticlesResponse{
+    count: number;
+    next: string | null;
+    previous: string | null;
+    results: NewsArticle[];
+}
+
 export interface NewsArticle {
     id: number;
     title: string;
