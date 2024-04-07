@@ -1,27 +1,28 @@
 # Spaceflightnews
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+This is a smart project of a frontend for the [Spaceflight News API](https://spaceflightnewsapi.net/) for educational purposes. 
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This web app is a simple frontend to show the latest news about space and tech. By tdefault you can see a all news in MatCards with the pic, the headline and a its summary, you can click on the `Read more` option to get the full article. You can also search any specific by its summary and/or its headline using keywords.
 
-## Code scaffolding
+## Homepage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Cards with article titles and descriptions for 100 characters. The user can click on the card to go to an article page that contains the title and full description of the selected article.
+2.  A field to filter by keyword. The user enters keywords into the field and the system displays all articles containing at least one of the keywords in the name or/and description.
+ - The priority of fields: (1) names; and (2) description. The article with one match in the name is higher than the article with one match in the description.
+- The matched keywords should be highlighted with yellow color.
 
-## Build
+Theresult should be something as follows:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Homepage result](Homepage.png "Homepage")
 
-## Running unit tests
+## Article view
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If the option of `Read more ->` is clicked, the view of the full article should look as follows:
 
-## Running end-to-end tests
+![Full Article](Article.png "Homepage")
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Note
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This is a real project assigment for a technical test of a __Junior frontend__ position in Angular
