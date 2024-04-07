@@ -1,0 +1,33 @@
+.search-container{
+    display: inline-block !important;
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.news-card{
+    max-width: 400px;
+    min-width: 100px;
+    max-height: fit-content;
+    min-height: fit-content;
+    margin: 20px;
+}
+
+.news-date{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.headline{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.news-summary{
+    margin-bottom: auto;
+    text-align: left;
+
+}

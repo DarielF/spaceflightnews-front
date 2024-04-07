@@ -1,0 +1,27 @@
+<div class="search-container">
+
+</div>
+<mat-divider></mat-divider>
+<div *ngFor="let news of articles" class="cards-container">
+    <mat-card class="news-card">
+        <img mat-card-image src={{news.image_url}} alt={{news.title}}>
+        <mat-card-subtitle class="news-date">
+            <mat-icon>calendar_today</mat-icon>
+            {{news.published_at | date: 'longDate'}}
+        </mat-card-subtitle>
+        <mat-card-title class="headline">
+            {{news.title}}
+        </mat-card-title>
+        <mat-card-content class="news-summary">
+            <p>
+                {{news.summary}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions class="action-button">
+            <button mat-button>
+                <mat-icon>arrow_forward</mat-icon>
+                Read more. . .
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
